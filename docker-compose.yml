@@ -1,0 +1,13 @@
+services:
+  cline:
+    build:
+      context: .
+    command: ["/bin/bash"]
+    stdin_open: true
+    tty: true
+    environment:
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      AWS_SESSION_TOKEN: "${AWS_SESSION_TOKEN}"
+      CLINE_AWS_MODEL_ID: "${CLINE_AWS_MODEL_ID}"
+      CLINE_AWS_REGION: "${CLINE_AWS_REGION}"

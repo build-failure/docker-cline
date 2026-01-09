@@ -1,0 +1,48 @@
+{
+  "welcomeViewCompleted": true,
+  "clineVersion": "3.39.2",
+  "planModeApiProvider": "bedrock",
+  "planModeApiModelId": "<planModeApiModelId>",
+  "planModeThinkingBudgetTokens": 1024,
+  "planModeFireworksModelId": "accounts/fireworks/models/kimi-k2-instruct-0905",
+  "actModeApiProvider": "bedrock",
+  "actModeApiModelId": "<actModeApiModelId>",
+  "actModeThinkingBudgetTokens": 1024,
+  "actModeFireworksModelId": "accounts/fireworks/models/kimi-k2-instruct-0905",
+  "awsRegion": "us-east-1",
+  "awsUseCrossRegionInference": true,
+  "awsProfile": "default",
+  "awsUseProfile": false,
+  "awsAuthentication": "credentials",
+  "openAiHeaders": {},
+  "sapAiCoreUseOrchestrationMode": true,
+  "ocaMode": "internal",
+  "mode": "act",
+  "autoApprovalSettings": {
+    "version": 3,
+    "enabled": true,
+    "favorites": [],
+    "maxRequests": 20,
+    "actions": {
+      "readFiles": true,
+      "readFilesExternally": false,
+      "editFiles": false,
+      "editFilesExternally": false,
+      "executeSafeCommands": true,
+      "executeAllCommands": false,
+      "useBrowser": false,
+      "useMcp": true
+    },
+    "enableNotifications": false
+  },
+  "workspaceRoots": [
+    {
+      "path": "/home/vscode/.cline/data",
+      "name": "data",
+      "vcs": "none"
+    }
+  ],
+  "primaryRootIndex": 0,
+  "globalWorkflowToggles": {},
+  "globalClineRulesToggles": {}
+}
