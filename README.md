@@ -1,5 +1,7 @@
 # Cline CLI Docker Image
 
+[![Build](https://github.com/build-failure/docker-cline/actions/workflows/build-and-publish.yml/badge.svg)](https://github.com/build-failure/docker-cline/actions/workflows/build-and-publish.yml)
+
 Cline CLI Docker image for Cline execution in CI/CD pipelines with Amazon Bedrock as LLM provider.
 
 ## Quick Start
