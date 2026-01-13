@@ -1,6 +1,6 @@
 # Cline CLI Docker Image
 
-Ready-to-use Docker image with Cline CLI and AWS Bedrock integration, built automatically via GitLab CI.
+Cline CLI Docker image for Cline execution in CI/CD pipelines with Amazon Bedrock as LLM provider.
 
 ## Quick Start
 
