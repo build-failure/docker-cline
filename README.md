@@ -5,7 +5,7 @@ Ready-to-use Docker image with Cline CLI and AWS Bedrock integration, built auto
 ## Quick Start
 
 ```bash
-# Pull from GitLab Container Registry
+# Pull from Container Registry
 docker pull $CI_REGISTRY_IMAGE:latest
 
 # Run interactively
@@ -27,11 +27,11 @@ docker run --rm \
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
-| `CLINE_AWS_MODEL_ID` | Yes | - | AWS Bedrock model ARN or inference profile |
 | `AWS_ACCESS_KEY_ID` | Yes | - | AWS access key |
 | `AWS_SECRET_ACCESS_KEY` | Yes | - | AWS secret key |
-| `CLINE_AWS_REGION` | No | `us-east-1` | AWS region |
 | `AWS_SESSION_TOKEN` | No | - | AWS session token (for temporary credentials) |
+| `CLINE_AWS_MODEL_ID` | Yes | - | AWS Bedrock model ARN or inference profile |
+| `CLINE_AWS_REGION` | No | `us-east-1` | AWS region |
 
 ## Features
 
@@ -52,16 +52,13 @@ For development and testing:
 
 ```bash
 # Clone and test locally
-docker-compose up
-docker-compose exec cline bash
+docker-compose run -it cline bash
 ```
 
 Create `.env` file for docker-compose:
 ```env
 CLINE_AWS_MODEL_ID="arn:aws:bedrock:us-east-1:account:inference-profile/global.anthropic.claude-3-5-sonnet-20241022-v2:0"
 CLINE_AWS_REGION="us-east-1"
-AWS_ACCESS_KEY_ID=your_access_key
-AWS_SECRET_ACCESS_KEY=your_secret_key
 ```
 
 ## Requirements
