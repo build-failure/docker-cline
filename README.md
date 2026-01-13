@@ -8,21 +8,21 @@ Cline CLI Docker image for Cline execution in CI/CD pipelines with Amazon Bedroc
 
 ```bash
 # Pull from Container Registry
-docker pull $CI_REGISTRY_IMAGE:latest
+docker pull ghcr.io/build-failure/docker-cline:latest
 
 # Run interactively
 docker run -it \
   -e CLINE_AWS_MODEL_ID="your-model-arn" \
   -e AWS_ACCESS_KEY_ID="your-key" \
   -e AWS_SECRET_ACCESS_KEY="your-secret" \
-  $CI_REGISTRY_IMAGE:latest
+  ghcr.io/build-failure/docker-cline:latest
 
 # Run cline commands directly
 docker run --rm \
   -e CLINE_AWS_MODEL_ID="your-model-arn" \
   -e AWS_ACCESS_KEY_ID="your-key" \
   -e AWS_SECRET_ACCESS_KEY="your-secret" \
-  $CI_REGISTRY_IMAGE:latest "Create a hello world script"
+  ghcr.io/build-failure/docker-cline:latest -o "Create a hello world script"
 ```
 
 ## Environment Variables
